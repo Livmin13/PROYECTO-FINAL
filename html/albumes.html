@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/BTS.png">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/albumes.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>ALBUMES</title>
+</head>
+<body>
+    <div class="container">
+    <h1 class="col-12">ALBUMES</h1>
+    <button id="bot_tarjetas" onclick="seleccioncarro('tarjetas')" class="botones_opciones">TARJETAS</button>
+    <button id="botcarro"onclick="seleccioncarro('tabla_carrito')" class="botones_opciones">CARRITO</button>
+    <header>
+        <img id="logo" src="../img/LOGO BTS.png" alt="logo">
+        
+        <nav class="barranavegacion">
+                <a class="menu" href="principal.html">Inicio</a>
+                <a class="menu" href="albumes.html">Catalogo</a>
+                <a class="menu" href="albumes.html">Carrito</a>
+                <a id="login" class="sesion" href="../html/login.html">Ingresar</a>
+                <a id="sign" class="sesion" href="sign.html">Registrarse</a>
+        </nav>
+    </header>
+    <div id="filtrar" class="col-12 opciones tarjetas">
+        <h2 id="actfiltrar" style="cursor: pointer;" class="col-12" onclick="actfiltro()">Filtrar</h2> </div>
+    <div id="divfiltros" hidden>
+    <ol id="filtros" class="col-12" >
+        <li>
+            <button id="juego" style="cursor: pointer;" class="filtro active" onclick="seleccionfiltro('juego')">Todos</button>
+        </li>
+        <li>
+            <button id="accion" style="cursor: pointer;" class="filtro" onclick="seleccionfiltro('accion')">Colaboraciones</button>
+        </li>
+        <li>
+            <button id="multijugador" style="cursor: pointer;" class="filtro" onclick="seleccionfiltro('multijugador')">Grupal</button>
+        </li>
+        <li>
+            <button id="carreras" style="cursor: pointer;" class="filtro" onclick="seleccionfiltro('carreras')">Mas vendidos </button>
+        </li>
+    </ol>
+    </div>
+    <ul class="opciones tarjetas col-12">
+        <li class="juego accion multijugador">
+            <div >
+                <img class="img_juego" src="../img/bad decisions.jpg" alt="bad decisions">
+                <h2 class="nom_juego">
+                     BAD DECISIONS
+                </h2>
+                <h3 class="des_juego" hidden>
+                    Malas decisiones
+                       <br>
+                       <br>"Bad Decisions" ("Malas decisiones" en español) es una canción del productor discográfico estadounidense Benny Blanco, la boy band surcoreana BTS y el rapero estadounidense Snoop Dogg. Fue lanzada a través de Interscope Records, Friends Keep Secrets y Joytime Collective como sencillo el 5 de agosto de 2022. La canción fue descrita como "un tema eufórico y coqueto de música de baile, en el tema los miembros de BTS y a Snoop hablan sobre un ser querido con el que quieren pasar tiempo.
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $55.000</b>
+                </h3>
+                <button class="bot_agcarrito" >Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li  class="juego accion">
+            <div>
+                <img class="img_juego" src="../img/jungkook.jpg" alt="viego">
+                <h2 class="nom_juego">
+                    LEFT AND RIGHT
+                </h2>
+                <h3 class="des_juego" hidden>
+                     Jungkook
+                       <br>
+                       <br>«Left and Right» es una canción del cantante estadounidense Charlie Puth con Jungkook de BTS, lanzada a través de Atlantic Records el 24 de junio de 2022, como el tercer sencillo del próximo tercer álbum de estudio de Puth, Charlie. Fue coescrito por Puth y Jacob Kasher Hindlin, y el primero también se desempeñó como productor. Disponible digitalmente y como un sencillo en CD de edición limitada, el dúo marca la segunda vez que Puth y Jungkook colaboran desde su interpretación de «We Don't Talk Anymore» en los Genie Music Awards en 2018.
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $40.000</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li class="juego carreras multijugador">
+            <div>
+                <img class="img_juego" src="../img//proof.jpg" alt="crash">
+                <h2 class="nom_juego">
+                     PROOF
+                </h2>
+                <h3 class="des_juego" hidden>
+                    BTS
+                        <br>
+                       <br>Proof es el primer álbum antológico del grupo surcoreano BTS, que fue lanzado el 10 de junio de 2022 a través de Big Hit Music.
+                </h3>
+                <h3 class="pre_juego">
+                   <b> $145.000</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li class="juego accion multijugador">
+            <div>
+                <img class="img_juego" src="../img/that that.jpg" alt="gta">
+                <h2 class="nom_juego">
+                    THAT THAT 
+                <h3 class="des_juego" hidden>
+                    SUGA<br>
+                       <br>«That That» es una canción grabada e interpretada por el cantante surcoreano PSY, junto con el rapero surcoreano Suga de la banda BTS, como parte de su octavo álbum de estudio Psy 9th. La canción fue escrita y producida por PSY y Suga.
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $45.000</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li class="juego accion multijugador">
+            <div >
+                <img class="img_juego" src="../img/astronauta.jpg" alt="lol">
+                <h2 class="nom_juego">
+                    THE ASTRONAUT
+                </h2>
+                <h3 class="des_juego" hidden>
+                    JIN
+                       <br>
+                       <br>JIN de BTS publica The astronaut como su trabajo más especial en solitario antes del servicio militar. Proyecto co-escrito junto a Coldplay.
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $174.000</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li class="juego multijugador">
+            <div >
+                <img class="img_juego" src="../img/MOST.jpg" alt="mondongo">
+                <h2 class="nom_juego">
+                    MOST 7
+                </h2>
+                <h3 class="des_juego" hidden>
+                    BTS
+                       <br>
+                       <br>Map of the Soul: 7 es el cuarto álbum de estudio (séptimo en total) del grupo surcoreano BTS. Fue lanzado el 21 de febrero de 2020 por Big Hit Entertainment en cuatro versiones diferentes, como continuación del EP de 2019 Map of the Soul: Persona. El Álbum ha sido descrito como un disco pop, R&B y hip-hop con influencias del rock, trap y EDM.Líricamente, toca temas de reflexión, introspección y autoaceptación.
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $177.000</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li class="juego multijugador">
+            <div >
+                <img class="img_juego" src="../img/YOU NEVER.jpg" alt="justdance">
+                <h2 class="nom_juego">
+                    YOU NEVER WALK ALONE
+                </h2>
+                <h3 class="des_juego" hidden>
+                    BTS
+                       <br>
+                       <br>Wings es el segundo álbum de estudio del grupo surcoreano BTS, publicado el 10 de octubre de 2016 por el sello Big Hit en cuatro versiones diferentes —W, I, N y G— y con un total de quince temas, siete de los cuales eran canciones en solitario de cada uno de los miembros.Una reedición, llamada You Never Walk Alone, salió a la venta el 13 de febrero de 2017, en la que se incluyeron tres temas nuevos.BTS se inspiró en la novela de aprendizaje Demian de Hermann Hesse para desarrollar el concepto del disco,que se centra principalmente en la tentación y el crecimiento, además de abordar, en menor medida, la salud mental y el empoderamiento femenino.
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $148.000</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li class="juego accion multijugador">
+            <div >
+                <img class="img_juego" src="../img/rush.jpg" alt="pokemon">
+                <h2 class="nom_juego">
+                   RUSH HOUR
+                </h2>
+                <h3 class="des_juego" hidden>
+                    J-HOPE
+                       <br>
+                       <br>El 22 de septiembre a las 18 h. KST, Crush lanzó su nuevo sencillo “Rush Hour” con J-Hope de BTS. Inmediatamente después de su lanzamiento, la canción se disparó al número 1 en la lista en tiempo real de Bugs en Corea y también subió a la cima de las listas de iTunes en muchos países del mundo.
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $45.000</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li class="juego multijugador carreras">
+            <div >
+                <img class="img_juego" src="../img/2 cool.jpg" alt="mariok">
+                <h2 class="nom_juego">
+                   2 COOL 4SKOOL 
+                </h2>
+                <h3 class="des_juego" hidden>
+                    BTS
+                       <br>
+                       <br>2 Cool 4 Skool es el sencillo debut de la boy band surcoreana BTS. Fue publicado el 12 de junio de 2013.
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $98.500</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+    </ul>
+    <div class="opciones tabla_carrito ocultas">
+        <table class="table">
+
+            <tr class="fila">
+          
+              <td ><span>#</span></td>
+          
+              <td class="producto"><span>Producto</span></td>
+          
+              <td ><span>Cantidad</span></td>
+
+              <td ><span>Precio unitario</span></td>
+
+              <td ><span>Subtotal</span></td>
+
+              <td ><span></span></td>
+          
+            </tr>
+        <tbody id="tbody">
+        </tbody>
+        </table>
+        <div id="seccion_total">
+            <div style="font-size: 2rem;">
+                <p>Total a pagar es: </p>
+                <p id="PAGO"></p>
+            </div>
+            <button id="bot_calcular" >Calcular total a pagar</button>
+        </div>
+    </div>
+    </div>
+    <footer class="col-12">
+        <p><i>Derechos reservados &copy; 2022@LivMimi</i></p>
+    </footer>
+</body>
+
+<script src="../js/jquery.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="../js/barmenu.js"></script>
+<script src="../js/filtro.js"></script>
+<script src="../js/carrito.js"></script>
+</html>
